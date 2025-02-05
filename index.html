@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Favicon Links -->
+  <link rel="apple-touch-icon" sizes="180x180" href="YOUR_PATH_TO_FAVICON/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="YOUR_PATH_TO_FAVICON/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="YOUR_PATH_TO_FAVICON/favicon-16x16.png">
+  <link rel="manifest" href="YOUR_PATH_TO_FAVICON/site.webmanifest">
+  
+  <!-- Meta Tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Title of the page -->
+  <title>YOUR_NAME</title>
+  
+  <!-- CSS for Bulma Framework -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
+  
+  <style>
+    /* Custom styles for the page */
+    body {
+      background-color: #f5f5f5;
+    }
+    .hero.is-medium {
+      background-color: #f5f5f5;
+    }
+    .hero-body {
+      padding: 4rem 2rem;
+    }
+    .subtitle {
+      margin-top: 0.5rem;
+      margin-bottom: 2rem;
+      font-size: 1.25rem;
+    }
+    .column:first-child {
+      margin-right: 2rem;
+    }
+    .profile-pic {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+  .nav {
+    display: flex;
+    justify-content: center;
+    background-color: #363636;
+    color: #fff;
+    padding: 1rem;
+  }
+  .nav-link {
+    margin-right: 1rem;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+  }
+  .nav-link:hover {
+    color: #ccc;
+  }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav class="nav is-centered">
+      <a class="nav-link" href="index.html">Home</a>
+      <a class="nav-link" href="cv.html">CV</a>
+      <a class="nav-link" href="projects.html">Projects</a>
+      <a class="nav-link" href="blog.html">Blog</a>
+    </nav>
+  </header>
+  
+
+  <!-- Hero section -->
+  <section class="hero is-medium">
+    <!-- Hero content -->
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-two-thirds">
+            <h1 class="title has-text-black">
+              YOUR_FULL_NAME | YOUR_PROFESSION
+            </h1>
+            <h2 class="subtitle has-text-grey">
+              YOUR_DESCRIPTION.
+              You can take a look at <a href="cv.html">my CV</a> and my <a href="projects.html">projects</a>.
+            </h2>
+            <h2 class="subtitle has-text-grey">
+              YOUR_EXPERIENCE_DESCRIPTION .
+            </h2>
+            <h2 class="subtitle has-text-grey">
+              YOUR_LOCATION_AND_CONTACT .
+            </h2>
+          </div>
+          <div class="column">
+            <figure class="image is-1by1">
+              <img class="profile-pic" src="YOUR_PROFILE_PICTURE_PATH" alt="profile-image">
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
