@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Favicon Links -->
+  <link rel="apple-touch-icon" sizes="180x180" href="YOUR_PATH_TO_FAVICON/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="YOUR_PATH_TO_FAVICON/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="YOUR_PATH_TO_FAVICON/favicon-16x16.png">
+  <link rel="manifest" href="YOUR_PATH_TO_FAVICON/site.webmanifest">
+  
+  <!-- Meta Tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Title of the page -->
+  <title>YOUR_BLOG_TITLE</title>
+  
+  <!-- CSS for Bulma Framework -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
+  
+  <style>
+    /* Navigation Bar */
+    .nav {
+      display: flex;
+      justify-content: center;
+      background-color: #363636;
+      color: #fff;
+      padding: 1rem;
+    }
+    .nav-link {
+      margin-right: 1rem;
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.3s ease-in-out;
+    }
+    .nav-link:hover {
+      color: #ccc;
+    }
+
+    /* Blog Container */
+    .container {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="nav is-centered">
+    <a class="nav-link" href="index.html">Home</a>
+    <a class="nav-link" href="cv.html">CV</a>
+    <a class="nav-link" href="projects.html">Projects</a>
+    <a class="nav-link" href="blog.html">Blog</a>
+  </nav>
+
+  <!-- Blog Page Content -->
+  <div class="container">
+    <h1 class="title">Blog</h1>
+    <p class="subtitle">A collection of posts about my projects and work.</p>
+
+    <!-- Blog Entries -->
+    <div class="columns is-multiline">
+      <!-- Blog Post 1 -->
+      <div class="column is-full">
+        <div class="card">
+          <div class="card-content">
+            <p class="title">YOUR_BLOG_POST_TITLE</p>
+            <p class="subtitle">YOUR_BLOG_POST_SUBTITLE</p>
+            <a href="YOUR_BLOG_POST_LINK" class="button is-link" target="_blank">Read blog post</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
