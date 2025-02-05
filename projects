@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Favicon Links -->
+  <link rel="apple-touch-icon" sizes="180x180" href="YOUR_PATH_TO_FAVICON/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="YOUR_PATH_TO_FAVICON/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="YOUR_PATH_TO_FAVICON/favicon-16x16.png">
+  <link rel="manifest" href="YOUR_PATH_TO_FAVICON/site.webmanifest">
+  
+  <!-- Meta Tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Title of the page -->
+  <title>YOUR_PAGE_TITLE</title>
+  
+  <!-- CSS for Bulma Framework -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
+  
+  <style>
+    .nav {
+        display: flex;
+        justify-content: center;
+        background-color: #363636;
+        color: #fff;
+        padding: 1rem;
+    }
+    .nav-link {
+        margin-right: 1rem;
+        color: #fff;
+        text-decoration: none;
+        transition: color 0.3s ease-in-out;
+    }
+    .nav-link:hover {
+        color: #ccc;
+    }
+  </style>
+</head>
+<body>
+  <nav class="nav is-centered">
+    <a class="nav-link" href="index.html">Home</a>
+    <a class="nav-link" href="cv.html">CV</a>
+    <a class="nav-link" href="projects.html">Projects</a>
+    <a class="nav-link" href="blog.html">Blog</a>
+  </nav>
+  
+  <div class="container" style="margin-top: 20px;">
+    <h1 class="title">Projects</h1>
+
+    <!-- Project 1 -->
+    <div class="column">
+      <div class="card">
+        <div class="card-content">
+          <p class="title">YOUR_PROJECT_1_TITLE</p>
+          <p class="subtitle">YOUR_PROJECT_1_DESCRIPTION</p>
+          <a href="YOUR_PROJECT_1_LINK" class="button is-link" target="_blank">
+            View on GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="column">
+      <div class="card">
+        <div class="card-content">
+          <p class="title">YOUR_PROJECT_2_TITLE</p>
+          <p class="subtitle">YOUR_PROJECT_2_DESCRIPTION</p>
+          <a href="YOUR_PROJECT_2_LINK" class="button is-link" target="_blank">
+            Your Project Link Text (e.g., "View on GitHub" or "Read more")
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="column">
+      <div class="card">
+        <div class="card-content">
+          <p class="title">YOUR_PROJECT_3_TITLE</p>
+          <p class="subtitle">YOUR_PROJECT_3_DESCRIPTION</p>
+          <a href="YOUR_PROJECT_3_LINK" class="button is-link" target="_blank">
+            Your Project Link Text (e.g., "Read blog post")
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
