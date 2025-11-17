@@ -1,59 +1,108 @@
-<style>
-  body {
-    background-color: #f5f5f5;
-    font-family: "Helvetica", Arial, sans-serif;
-  }
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Favicon Links -->
+  <link rel="apple-touch-icon" sizes="180x180" href="static/images/froggy.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="static/images/froggy.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="static/images/froggy.png">
+  <link rel="manifest" href="static/images/froggy.png">
+  
+  <!-- Meta Tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Title of the page -->
+  <title>0xmilarepa</title>
+  
+  <!-- CSS for Bulma Framework -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
+  
+  <style>
+    /* Custom styles for the page */
+    body {
+      background-color: #f5f5f5;
+    }
+    .hero.is-medium {
+      background-color: #f5f5f5;
+    }
+    .hero-body {
+      padding: 4rem 2rem;
+    }
+    .subtitle {
+      margin-top: 0.5rem;
+      margin-bottom: 2rem;
+      font-size: 1.25rem;
+    }
+    .column:first-child {
+      margin-right: 2rem;
+    }
+    .profile-pic {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
 
-  /* NAV */
   .nav {
     display: flex;
     justify-content: center;
     background-color: #363636;
     color: #fff;
-    padding: 0.5rem 1rem; /* reduced vertical padding */
+    padding: 1rem;
   }
   .nav-link {
     margin-right: 1rem;
     color: #fff;
     text-decoration: none;
     transition: color 0.3s ease-in-out;
-    font-weight:600;
   }
   .nav-link:hover {
     color: #ccc;
   }
+  </style>
+</head>
+<body>
 
-  /* HERO */
-  .hero.is-medium {
-    background-color: #f5f5f5;
-    padding-top: 2rem; /* reduce space from nav */
-    padding-bottom: 2rem;
-  }
-  .hero-body {
-    padding: 2rem;
-  }
+  <header>
+    <nav class="nav is-centered">
+      <a class="nav-link" href="index.html">Home</a>
+      <a class="nav-link" href="cv.html">CV</a>
+      <a class="nav-link" href="projects.html">Projects</a>
+      <a class="nav-link" href="blog.html">Blog</a>
+    </nav>
+  </header>
+  
 
-  /* PROFILE IMAGE */
-  .profile-pic {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 2px solid rgba(0,0,0,.1);
-  }
+  <!-- Hero section -->
+  <section class="hero is-medium">
+    <!-- Hero content -->
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-two-thirds">
+            <h1 class="title has-text-black">
+              Julián Medrano Hoyos | Interdisciplinary Reasearcher
+            </h1>
+            <h2 class="subtitle has-text-grey">
+              I’m an interdisciplinary researcher with an academic background in art and philosophy. Since 2021 I have been exploring the philosophical and cultural implications of emerging technologies like bitcoin while building a solid foundation in blockchain.
+            </h2>
+            <h2 class="subtitle has-text-grey">
+             After completing an intensive Data Science program at Le Wagon in Paris, I’ve gained the technical skills to code, work with and understand artificial intelligence models. I’m now exploring research in machine learning, digital assets, and the increasing role algorithms play in our world.
+Alongside my research, I collaborate with the Fundación Archosauria, a non-profit organization in Colombia that manages Vivarium del Caribe, a nature reserve for fauna and flora of the Caribbean. Here you can explore my detailed <a href="cv.html">curriculum</a> and my <a href="projects.html">projects</a>.
+            </h2>
+            <h2 class="subtitle has-text-grey">
+              Currently based in Paris, feel free to reach out via <a href="mailto:0xmilarepa@gmail.com">email</a> or my <a href="https://www.linkedin.com/in/medranohoyos/">LinkedIn</a> profile.
+            </h2>
+          </div>
+          <div class="column">
+            <figure class="image is-1by1">
+              <img class="profile-pic" src="static/images/git-pic.jpg" alt="profile-image">
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  /* BUTTONS */
-  a.button {
-    font-weight:600;
-    text-decoration:none;
-  }
-  a.button.cv-button {
-    background-color: #363636;
-    color:#fff;
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
-  }
-  a.button.cv-button:hover {
-    background-color: #4a4a4a;
-  }
-</style>
+</body>
+</html>
