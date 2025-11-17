@@ -1,108 +1,207 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <!-- Favicon Links -->
-  <link rel="apple-touch-icon" sizes="180x180" href="static/images/froggy.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="static/images/froggy.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="static/images/froggy.png">
-  <link rel="manifest" href="static/images/froggy.png">
-  
-  <!-- Meta Tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <!-- Title of the page -->
-  <title>0xmilarepa</title>
-  
-  <!-- CSS for Bulma Framework -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>0xmilarepa — Julián Medrano Hoyos</title>
+
+  <!-- Bulma CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
-  
+
+  <!-- Simple custom styling -->
   <style>
-    /* Custom styles for the page */
+    :root{
+      --accent:#2b2b2b;
+      --muted:#6b6b6b;
+      --card:#ffffff;
+      --bg:#f7f7f7;
+    }
+    html,body { height:100%; }
     body {
-      background-color: #f5f5f5;
-    }
-    .hero.is-medium {
-      background-color: #f5f5f5;
-    }
-    .hero-body {
-      padding: 4rem 2rem;
-    }
-    .subtitle {
-      margin-top: 0.5rem;
-      margin-bottom: 2rem;
-      font-size: 1.25rem;
-    }
-    .column:first-child {
-      margin-right: 2rem;
-    }
-    .profile-pic {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      object-fit: cover;
+      background: var(--bg);
+      color: var(--accent);
+      font-family: "Helvetica Neue", Arial, sans-serif;
     }
 
-  .nav {
-    display: flex;
-    justify-content: center;
-    background-color: #363636;
-    color: #fff;
-    padding: 1rem;
-  }
-  .nav-link {
-    margin-right: 1rem;
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.3s ease-in-out;
-  }
-  .nav-link:hover {
-    color: #ccc;
-  }
+    /* Nav */
+    .nav {
+      background: #222;
+      padding: .75rem 1rem;
+      box-shadow: 0 1px 0 rgba(0,0,0,.06);
+    }
+    .nav .nav-link {
+      color: #fff;
+      margin-right: 1rem;
+      font-weight:600;
+      text-decoration: none;
+    }
+    .nav .nav-link:hover { color:#ddd; }
+
+    /* Hero */
+    .hero.is-medium {
+      background: transparent;
+      padding-top: 3rem;
+      padding-bottom: 2rem;
+    }
+    .hero .title {
+      font-weight:700;
+      letter-spacing:.2px;
+    }
+    .intro {
+      color: var(--muted);
+      line-height:1.5;
+      margin-bottom:1rem;
+    }
+
+    .profile-pic {
+      width:160px; height:160px;
+      border-radius:8px;
+      object-fit:cover;
+      box-shadow: 0 8px 24px rgba(0,0,0,.08);
+      border: 2px solid rgba(0,0,0,.04);
+    }
+
+    /* Feature cards */
+    .features { margin-top:2rem; }
+    .card { border-radius: 8px; }
+    .feature-title { font-weight:700; margin-bottom:.5rem; }
+    .feature-desc { color:var(--muted); font-size:.96rem; }
+
+    /* CTA */
+    .cta {
+      margin-top:1.25rem;
+    }
+    .button.is-primary { background:#0a66c2; border-color:#0a66c2; }
+
+    /* Footer */
+    footer.footer { padding:2rem 1rem; background:transparent; color:var(--muted); margin-top:2.5rem; }
+    @media (max-width:768px){
+      .profile-pic { width:120px; height:120px; }
+    }
   </style>
 </head>
 <body>
 
+  <!-- NAV -->
   <header>
-    <nav class="nav is-centered">
-      <a class="nav-link" href="index.html">Home</a>
-      <a class="nav-link" href="cv.html">CV</a>
-      <a class="nav-link" href="projects.html">Projects</a>
-      <a class="nav-link" href="blog.html">Blog</a>
+    <nav class="nav" role="navigation" aria-label="main navigation">
+      <div class="container is-max-desktop" style="display:flex;align-items:center;justify-content:space-between;">
+        <div>
+          <a href="index.html" class="nav-link">0xmilarepa</a>
+        </div>
+        <div>
+          <a class="nav-link" href="cv.html">CV</a>
+          <a class="nav-link" href="projects.html">Projects</a>
+          <a class="nav-link" href="blog.html">Blog</a>
+          <a class="nav-link" href="mailto:0xmilarepa@gmail.com">Contact</a>
+        </div>
+      </div>
     </nav>
   </header>
-  
 
-  <!-- Hero section -->
+  <!-- HERO -->
   <section class="hero is-medium">
-    <!-- Hero content -->
     <div class="hero-body">
-      <div class="container">
-        <div class="columns">
+      <div class="container is-max-desktop">
+        <div class="columns is-vcentered">
           <div class="column is-two-thirds">
-            <h1 class="title has-text-black">
-              Julián Medrano Hoyos | Interdisciplinary Reasearcher
-            </h1>
-            <h2 class="subtitle has-text-grey">
-              I’m an interdisciplinary researcher with an academic background in art and philosophy. Since 2021 I have been exploring the philosophical and cultural implications of emerging technologies like bitcoin while building a solid foundation in blockchain.
-            </h2>
-            <h2 class="subtitle has-text-grey">
-             After completing an intensive Data Science program at Le Wagon in Paris, I’ve gained the technical skills to code, work with and understand artificial intelligence models. I’m now exploring research in machine learning, digital assets, and the increasing role algorithms play in our world.
-Alongside my research, I collaborate with the Fundación Archosauria, a non-profit organization in Colombia that manages Vivarium del Caribe, a nature reserve for fauna and flora of the Caribbean. Here you can explore my detailed <a href="cv.html">curriculum</a> and my <a href="projects.html">projects</a>.
-            </h2>
-            <h2 class="subtitle has-text-grey">
-              Currently based in Paris, feel free to reach out via <a href="mailto:0xmilarepa@gmail.com">email</a> or my <a href="https://www.linkedin.com/in/medranohoyos/">LinkedIn</a> profile.
-            </h2>
+            <h1 class="title is-2">Julián Medrano Hoyos</h1>
+            <h2 class="subtitle is-5">Interdisciplinary researcher — culture, technology, & emerging systems</h2>
+
+            <!-- intro placeholder: keep the copy here short; we'll edit later -->
+            <p class="intro">
+              I’m an interdisciplinary researcher with a background in art and philosophy. Since 2021 I’ve been working across cultural strategy, AI, and blockchain research — from protocol analysis to applied machine learning.
+            </p>
+
+            <p>
+              <a href="cv.html" class="button is-light">See CV</a>
+              <a href="#work" class="button is-primary cta">My work</a>
+            </p>
+
+            <!-- small contact line -->
+            <p style="margin-top:1rem;color:var(--muted);font-size:.95rem;">
+              Based in Paris • <a href="mailto:0xmilarepa@gmail.com">0xmilarepa@gmail.com</a> • <a href="https://www.linkedin.com/in/medranohoyos/" target="_blank">LinkedIn</a>
+            </p>
           </div>
-          <div class="column">
-            <figure class="image is-1by1">
-              <img class="profile-pic" src="static/images/git-pic.jpg" alt="profile-image">
+
+          <div class="column is-one-third has-text-right">
+            <figure class="image is-inline-block">
+              <img class="profile-pic" src="static/images/git-pic.jpg" alt="profile image">
             </figure>
           </div>
         </div>
+
+        <!-- Features block -->
+        <div id="work" class="features">
+          <div class="columns is-multiline">
+            <div class="column is-one-third">
+              <div class="card">
+                <div class="card-content">
+                  <p class="feature-title">Research for creators</p>
+                  <p class="feature-desc">
+                    Short research packets, topic scouting, and narrative frameworks tailored for video and long-form creators. Source lists, story hooks, and 1–2 page briefs ready to be turned into scripts.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="column is-one-third">
+              <div class="card">
+                <div class="card-content">
+                  <p class="feature-title">Writing & analysis</p>
+                  <p class="feature-desc">
+                    Essays, reports, and op-eds on cultural and technological trends — concise, referenced, and aimed at engagement with intellectual and creative audiences.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="column is-one-third">
+              <div class="card">
+                <div class="card-content">
+                  <p class="feature-title">Web3 & AI R&D</p>
+                  <p class="feature-desc">
+                    Hands-on projects and prototypes: token analytics, on-chain attribution, and applied ML for blockchain data. Technical credibility that supports evidence-based research.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div> <!-- columns -->
+        </div>
+
+        <!-- Quick samples / teaser row -->
+        <div style="margin-top:2rem;">
+          <h3 class="title is-5">Selected</h3>
+          <div class="columns">
+            <div class="column">
+              <a href="projects.html"><strong>Bubblemaps token analytics</strong></a><br>
+              <small style="color:var(--muted)">Hackathon-winning tool visualizing trader networks.</small>
+            </div>
+            <div class="column">
+              <a href="projects.html"><strong>ML address attribution</strong></a><br>
+              <small style="color:var(--muted)">Classifier for CEX and bridge detection using on-chain features.</small>
+            </div>
+            <div class="column">
+              <a href="cv.html"><strong>Data Science & AI — Le Wagon</strong></a><br>
+              <small style="color:var(--muted)">Applied ML + production pipelines.</small>
+            </div>
+          </div>
+        </div>
+
+      </div> <!-- container -->
+    </div> <!-- hero-body -->
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container is-max-desktop">
+      <div class="content">
+        <p style="color:var(--muted);font-size:.95rem;">
+          © Julián Medrano Hoyos — Research & writing. Based in Paris. <a href="mailto:0xmilarepa@gmail.com">Contact</a>
+        </p>
       </div>
     </div>
-  </section>
+  </footer>
 
 </body>
 </html>
